@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/choose_language"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/language_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkedText_english"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingEnd="15dp"
+        android:textStyle="bold"
+        android:buttonTint="@color/colorPrimary"
+        android:gravity="end|center"
+        android:textSize="18dp"
+        android:text="@string/enlish_checkbox" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <CheckBox
+        android:id="@+id/checkedText_tamil"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingEnd="15dp"
+        android:textStyle="bold"
+        android:buttonTint="@color/colorPrimary"
+        android:gravity="end|center"
+        android:textSize="18dp"
+        android:text="@string/tamil_checkbox" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <CheckBox
+        android:id="@+id/checkedText_hindi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingEnd="15dp"
+        android:textStyle="bold"
+        android:buttonTint="@color/colorPrimary"
+        android:gravity="end|center"
+        android:textSize="18dp"
+        android:text="@string/hindi_checkbox"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

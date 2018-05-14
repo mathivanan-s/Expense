@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Expense</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Exit</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="language_title">உங்கள் விருப்பமான மொழியைத் தேர்வு செய்க</string>
+    <string name="enlish_checkbox">English</string>
+    <string name="tamil_checkbox">தமிழ்</string>
+    <string name="hindi_checkbox">हिंदी</string>
+
+    <string name="monthly_balance_remaing"> செலவுகள் + வருமானம்</string>
+    <string name="remaining_balance">மீதமுள்ள \nதொகை</string>
+    <string name="income">வரவு</string>
+    <string name="expense">செலவு</string>
+    <string name="days_left">நாட்கள் மீதமுள்ளது</string>
+    <string name="last_10_expense_record">கடைசி 10 செலவுகள்</string>
+    <string name="this_month_expense_chart">இந்த மாத செலவின அட்டவணை</string>
+
+    <!--Main activity,menu-->
+    <string name="nav_expense_list">மாத வாரியாக செலவு</string>
+    <string name="nav_income_list">மாத வாரியாக வருமானம்</string>
+    <string name="nav_chart">விளக்கப்படம்</string>
+    <string name="nav_category_wise_expense_list">வகை வாரியாக செலவு பட்டியல்</string>
+    <string name="nav_total_report">மொத்த அறிக்கை</string>
+    <string name="nav_allinone">ஆண்டு வாரியாக அறிக்கை</string>
+    <string name="nav_settings">அமைப்புகள்</string>
+    <string name="nav_language">மொழி</string>
+    <string name="nav_about_us">எங்களை பற்றி</string>
+    <string name="nav_share">பகிர்</string>
+    <string name="nav_rate_us">எங்களை மதிப்பிடு</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.mathi.expense.AllInOneReportActivity">
+
+    <ListView
+        android:id="@+id/all_in_one_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/ttotal_income"
+        android:paddingRight="5dp"
+        android:gravity="center|right"
+        android:background="@color/AntiqueWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ttotal_expense"
+        android:layout_alignParentStart="true"
+        android:text="Income:Rs.1536.00"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ttotal_expense"
+        android:paddingRight="5dp"
+        android:gravity="center|right"
+        android:background="@color/AntiqueWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ttotal_income"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="Expense:Rs.1536.00"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ttotal_income"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/ttotal_balance"
+        android:layout_width="match_parent"
+        android:gravity="right|center"
+        android:paddingRight="5dp"
+        android:background="@color/AntiqueWhite"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view"
+        android:layout_below="@+id/view"
+        android:text="Total Balance:Rs.1536.00"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Expense</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Exit</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="language_title">अपनी पसंदीदा भाषा चुनें</string>
+    <string name="enlish_checkbox">English</string>
+    <string name="tamil_checkbox">தமிழ்</string>
+    <string name="hindi_checkbox">हिंदी</string>
+<!--mainactivity-->
+    <string name="monthly_balance_remaing"> शेष + शेष</string>
+    <string name="remaining_balance">शेष \n बैलेंस</string>
+    <string name="income">आय</string>
+    <string name="expense">व्यय</string>
+    <string name="days_left">बचे हुए दिन</string>
+    <string name="last_10_expense_record">अंतिम 10 व्यय</string>
+    <string name="this_month_expense_chart">इस महीने व्यय चार्ट</string>
+
+    <!--Main activity,menu-->
+    <string name="nav_expense_list">महीने के व्यय</string>
+    <string name="nav_income_list">महीने की आय</string>
+    <string name="nav_chart">चार्ट</string>
+    <string name="nav_category_wise_expense_list">श्रेणी बुद्धिमान व्यय सूची</string>
+    <string name="nav_total_report">कुल रिपोर्ट</string>
+    <string name="nav_allinone">साल के वार रिपोर्ट</string>
+    <string name="nav_settings">सेटिंग्स</string>
+    <string name="nav_language">भाषा</string>
+    <string name="nav_about_us">हमारे बारे में</string>
+    <string name="nav_share">शेयर</string>
+    <string name="nav_rate_us">हमें रेटिंग दें</string>
+
+</resources>

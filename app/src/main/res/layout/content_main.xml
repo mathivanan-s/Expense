@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/silver"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mathi.expense.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_above="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_blance"
+                android:layout_width="match_parent"
+                android:background="#4162F1"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/monthly_balance_remaing"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"/>
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/balance_seekbar"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/t_title"
+                android:layout_marginLeft="20dp"
+                app:cs_maintain_equal_circle="true"
+                app:cs_circle_progress_color = "#FF00FF"
+                app:cs_start_angle="-250"
+                app:cs_end_angle="70"
+                app:cs_circle_style="round"
+                app:cs_circle_stroke_width="8dp"
+                app:cs_disable_pointer="true"/>
+
+            <TextView
+                android:id="@+id/tleft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining_balance"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_alignTop="@+id/income_seekbar"
+                android:layout_alignStart="@+id/balance_seekbar" />
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tleft"
+                    android:layout_below="@+id/tleft"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/income_seekbar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="160dp"
+                app:cs_maintain_equal_circle="true"
+                app:cs_start_angle="-250"
+                app:cs_end_angle="70"
+                app:cs_circle_progress_color = "#FF00FF"
+                app:cs_circle_style="round"
+                app:cs_circle_stroke_width="8dp"
+                app:cs_disable_pointer="true"
+                android:layout_alignBottom="@+id/balance_seekbar" />
+
+                <TextView
+                    android:id="@+id/tincome"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/balance"
+                    android:layout_alignStart="@+id/income"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center"
+                    android:text="@string/income"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/income"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/income_seekbar"
+                    android:layout_alignTop="@+id/balance"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="@color/Black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/expense_seekbar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="250dp"
+                app:cs_maintain_equal_circle="true"
+                app:cs_start_angle="-250"
+                app:cs_end_angle="70"
+                app:cs_circle_progress_color = "#FF00FF"
+                app:cs_circle_style="round"
+                app:cs_circle_stroke_width="8dp"
+                app:cs_disable_pointer="true"
+                android:layout_alignTop="@+id/income_seekbar" />
+
+            <TextView
+                android:id="@+id/texpense"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="@string/expense"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginEnd="7dp"
+                android:layout_alignBaseline="@+id/tincome"
+                android:layout_alignBottom="@+id/tincome"
+                android:layout_alignEnd="@+id/expense" />
+
+
+
+            <TextView
+                android:id="@+id/expense"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:layout_marginEnd="10dp"
+                android:layout_alignBaseline="@+id/income"
+                android:layout_alignBottom="@+id/income"
+                android:layout_alignEnd="@+id/expense_seekbar" />
+
+
+            <TextView
+                android:id="@+id/left_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/days_left"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_below="@+id/balance_seekbar"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rl_blance"
+                android:background="@drawable/button_shape"
+                android:gravity="center">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/income_bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_below="@+id/income_bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <Button
+                    android:id="@+id/income_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/income"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_chart"
+                android:padding="5dp"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/expense_bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp" />
+
+                <View
+                    android:id="@+id/expense_view"
+                    android:layout_below="@+id/expense_bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <Button
+                    android:id="@+id/expense_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/expense_view"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/expense"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_getdada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape">
+
+                <TextView
+                    android:id="@+id/last_10_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="left|center"
+                    android:paddingLeft="40dp"
+                    android:drawableLeft="@drawable/touch"
+                    android:drawablePadding="10dp"
+                    android:text="@string/last_10_expense_record"
+                    android:textColor="@color/Black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-9305476992479634/3197904135">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

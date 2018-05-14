@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/silver"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@drawable/button_shape"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/income_edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:textSize="20dp"
+        android:hint="Enter your income..."
+        android:inputType="number" />
+
+
+    <Spinner
+        android:id="@+id/income_category_list_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/spinner_selector"
+        android:layout_below="@+id/income_edit_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/income_description_edit"
+        android:textSize="20dp"
+        android:hint="Write a brief description"
+        android:layout_below="@+id/income_category_list_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/income_date"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="Select Date..."
+        android:background="@drawable/spinner_selector"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/income_description_edit"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/income_save_btn"
+        android:text="Save"
+        android:background="@drawable/custom_button"
+        android:layout_below="@+id/income_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9305476992479634/3197904135">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

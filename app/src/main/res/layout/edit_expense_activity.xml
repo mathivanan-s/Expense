@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/expense_edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:textSize="20dp"
+        android:hint="Enter your expense..."
+        android:inputType="number" />
+
+
+    <Spinner
+        android:id="@+id/expense_category_list_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/spinner_selector"
+        android:layout_below="@+id/expense_edit_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/expense_description_edit"
+        android:textSize="20dp"
+        android:hint="Write a brief description"
+        android:layout_below="@+id/expense_category_list_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/expense_date"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="Select Date..."
+        android:background="@drawable/button_shape"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/expense_description_edit"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/expense_save_btn"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:layout_below="@+id/expense_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+</RelativeLayout>

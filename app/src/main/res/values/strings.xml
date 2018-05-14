@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Expense</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Exit</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <string name="language_title">Choose Your Preferred Language</string>
+    <string name="enlish_checkbox">English</string>
+    <string name="tamil_checkbox">தமிழ்</string>
+    <string name="hindi_checkbox">हिंदी</string>
+    <!--Main activity-->
+    <string name="monthly_balance_remaing"> Balance + Remaining</string>
+    <string name="remaining_balance">Remaining \nBalance</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="days_left">Days Left</string>
+    <string name="last_10_expense_record">Last 10 Expense</string>
+    <string name="this_month_expense_chart">This month Expense Chart</string>
+    <!--Main activity,menu-->
+    <string name="nav_expense_list"> Month Wise Expense</string>
+    <string name="nav_income_list">Month Wise Income</string>
+    <string name="nav_chart">Chart</string>
+    <string name="nav_category_wise_expense_list">Category Wise Expense List</string>
+    <string name="nav_total_report">Total Report</string>
+    <string name="nav_allinone">Year Wise Report</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_language">Language</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_rate_us">Rate Us</string>
+
+
+</resources>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border4"
+    android:gravity="center"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginEnd="7dp"
+        android:layout_alignTop="@+id/appwidget_t_month"
+        android:layout_toStartOf="@+id/appwidget_t_month" />
+
+    <TextView
+        android:id="@+id/appwidget_t_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Current Month Data"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/appwidget_t_income"
+        android:layout_alignStart="@+id/appwidget_t_income" />
+
+    <TextView
+        android:id="@+id/appwidget_t_income"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Income :"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/appwidget_t_expense"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Expense :"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/appwidget_t_income"/>
+
+    <TextView
+        android:id="@+id/appwidget_t_total"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Total :"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/appwidget_t_expense"/>
+
+    <TextView
+        android:id="@+id/appwidget_income"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="1500"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:layout_toRightOf="@+id/appwidget_t_expense"/>
+
+    <TextView
+        android:id="@+id/appwidget_expense"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="1000"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/appwidget_income"
+        android:layout_toRightOf="@+id/appwidget_t_income"/>
+
+    <TextView
+        android:id="@+id/appwidget_total"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="500"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/appwidget_expense"
+        android:layout_toRightOf="@+id/appwidget_t_total"/>
+
+</RelativeLayout>

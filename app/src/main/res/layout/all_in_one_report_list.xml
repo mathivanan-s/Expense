@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Month"
+        android:textColor="@color/Black"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/allinonereportll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_income"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:text="Income:"
+            android:textColor="@color/Black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/income_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4500"
+            android:gravity="right|center"
+            android:textColor="@color/Black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/allinonereportll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/t_expense"
+            android:text="Expense:"
+            android:textSize="18dp"
+            android:gravity="right|center"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expense_total"
+            android:text="3500"
+            android:textSize="18dp"
+            android:gravity="right|center"
+            android:textColor="@color/Black" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:id="@+id/allinonereportll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/t_total_balance"
+            android:text="Total Balance:"
+            android:gravity="right|center"
+            android:textSize="18dp"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balance_total"
+            android:text="1000"
+            android:gravity="right|center"
+            android:textSize="18dp"
+            android:textColor="@color/Black" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
